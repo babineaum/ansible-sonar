@@ -15,7 +15,7 @@
      repo="{{ item.git }}"
      dest="{{ sonar_projects_base }}/{{ item.name }}"
      version="{{ item.version }}"
-  with_items: sonar_projects
+  with_items: "{{sonar_projects}}"
   become_user: "{{ sonar_owner }}"
   when: sonar_projects | count > 0
 
