@@ -116,9 +116,9 @@ sonar_plugins                            :
 sonar_service_state   : 'started'
 sonar_service_enabled : 'yes'
 sonar_version         : "{{sonar_major}}.{{sonar_minor}}"
-sonar_name            : "sonar-{{sonar_version}}"
-sonar_archive         : "sonar-{{sonar_version}}.zip"
-sonar_url             : "http://dist.sonar.codehaus.org/{{sonar_archive}}"
+sonar_name            : "sonarqube-{{sonar_version}}"
+sonar_archive         : "{{sonar_name}}.zip"
+sonar_url             : "https://sonarsource.bintray.com/Distribution/sonarqube/{{sonar_archive}}"
 sonar_home_dir        : "{{sonar_base_dir}}/{{sonar_name}}"
 sonar_conf_dir        : "{{sonar_home_dir}}/conf"
 sonar_bin_dir         : "{{sonar_home_dir}}/bin"
