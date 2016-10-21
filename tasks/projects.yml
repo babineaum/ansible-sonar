@@ -1,12 +1,12 @@
 ---
 - name: projects | Install git
   apt:
-    name="git-{{ sonar_git_version }}"
+    name="git"
   when: ansible_os_family == "DEBIAN"
 
 - name: projects | Install git
   yum:
-    name="git-{{ sonar_git_version }}"
+    name="git"
   when: ansible_os_family == "REDHAT"
 
 - name: projects | Create project directory
