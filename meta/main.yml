@@ -2,10 +2,13 @@
 dependencies: []
 
 galaxy_info:
-  author: Adham Helal
-  description: "Deploy sonar qube on Ubuntu 12.04"
-  min_ansible_version: 1.6
+  author: Matt Banineau
+  description: "Deploy SonarQube on Ubuntu 12.04 and Centos 7"
+  min_ansible_version: 1.8
   platforms:
+    - name: Centos
+      versions:
+      - 7
   - name: Ubuntu
     versions:
     - precise

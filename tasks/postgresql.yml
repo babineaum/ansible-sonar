@@ -1,4 +1,6 @@
 ---
+- name: postgresql | Install python module for postgresql
+  package: "name=python-psycopg2 state=installed"
 
 - name: postgresql | Create sonar postgresql user
   postgresql_user:
